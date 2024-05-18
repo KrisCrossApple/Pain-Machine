@@ -20,7 +20,7 @@ public class MainPain extends Mod{
             // This code will kill me from the .isPlayer()
             if(event.unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("Why");
-            }
+            };
     });
 
 }
