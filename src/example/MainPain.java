@@ -21,4 +21,4 @@ public class mainpain extends Mod{
         };
     });
 
-}
+};
