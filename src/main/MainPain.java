@@ -19,7 +19,7 @@ public class MainPain extends Mod{
         Events.on(UnitDestroyEvent.class, event ->{
             // This code will kill me from the .isPlayer()
             if(event.unit.isPlayer()){
-                Vars.ui.hudfrag.showToast("Why")
+                Vars.ui.hudfrag.showToast("Why");
             }
     });
 
