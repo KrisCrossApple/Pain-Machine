@@ -12,11 +12,12 @@ import mindustry.ui.dialogs.*;
 public class MainPain extends Mod{
 
     public MainPain(){
-        Log.info(":3 This is kris! I am inside your walls! :3");
+        Log.info("Test");
 
-        //listen for game load event
+        //Detects when something dies!
         Events.on(UnitDestroyEvent.class, dead ->{
-            if(dead.isPlayer()){
+            // This code will kill me from the .isPlayer()
+            if(dead.unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("If you see this Kris fucked up. :3");
         };
     });
