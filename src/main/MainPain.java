@@ -16,11 +16,11 @@ public class MainPain extends Mod{
         Log.info("Test");
 
         //Detects when something dies!
-        Events.on(UnitDestroyEvent.class, event ->{
+        Events.on(UnitDestroyEvent.class, event -> {
             // This code will kill me from the .isPlayer()
             if(event.unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("Why");
-            };
+            }
     });
 
 }
