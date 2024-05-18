@@ -19,8 +19,8 @@ public class MainPain extends Mod{
             // This code will kill me from the .isPlayer()
             Vars.ui.hudfrag.showToast("if this is because the dead.unit.isPlayer() is acting up i swear to god");
             if(dead.unit.isPlayer()){
+                Core.app.exit()
                 Vars.ui.hudfrag.showToast("If you see this Kris fucked up. :3");
-                Core.app.exit();
         };
     });
 
