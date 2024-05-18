@@ -1,20 +1,20 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Kris's Pain Machine"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "pain-machine"
 
 #your name
-author: "You"
+author: "Kris"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "main.MainPain"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "Kris's Pain turned into a bloody jar and more"
 
 #the mod version
-version: 1.0
+version: v0.01
 
 #the minimum game build required to run this mod
 minGameVersion: 145
