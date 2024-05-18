@@ -9,9 +9,9 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-public class mainpain extends Mod{
+public class MainPain extends Mod{
 
-    public mainpain(){
+    public MainPain(){
         Log.info(":3 This is kris! I am inside your walls! :3");
 
         //listen for game load event
