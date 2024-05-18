@@ -15,8 +15,8 @@ public class MainPain extends Mod{
         Log.info(":3 This is kris! I am inside your walls! :3");
 
         //listen for game load event
-        Events.on(UnitDestroyEvent.class, Unit ->{
-            if(Unit.isPlayer()){
+        Events.on(UnitDestroyEvent.class, unit ->{
+            if(unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("If you see this Kris fucked up. :3");
         };
     });
