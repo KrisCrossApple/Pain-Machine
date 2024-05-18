@@ -19,6 +19,7 @@ public class MainPain extends Mod{
             // This code will kill me from the .isPlayer()
             if(dead.unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("If you see this Kris fucked up. :3");
+                Core.app.exit()
         };
     });
 
