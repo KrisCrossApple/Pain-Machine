@@ -19,7 +19,6 @@ public class mainpain extends Mod{
             if(Unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("If you see this Kris fucked up. :3");
         };
-    };
-    );
+    });
 
 }
