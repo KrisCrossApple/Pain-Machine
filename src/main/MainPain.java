@@ -21,7 +21,7 @@ public class MainPain extends Mod{
             if(dead.unit.isPlayer()){
                 Core.app.exit()
                 Vars.ui.hudfrag.showToast("If you see this Kris fucked up. :3");
-        };
+            }
     });
 
 }
