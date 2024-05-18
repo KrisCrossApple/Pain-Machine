@@ -15,13 +15,17 @@ public class MainPain extends Mod{
     public MainPain(){
         Log.info("Test");
 
-        //Detects when something dies!
+        // Detects when something dies!
         Events.on(UnitDestroyEvent.class, event -> {
-            // This code will kill me from the .isPlayer()
+            // Check if the unit is a player
             if(event.unit.isPlayer()){
                 Vars.ui.hudfrag.showToast("Why");
             }
-    });
+        });
+    }
 
-}
+    @Override
+    public void init() {
+        // You can add initialization code here if needed
+    }
 }
