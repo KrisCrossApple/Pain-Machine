@@ -16,10 +16,10 @@ public class MainPain extends Mod{
     public MainPain(){
         Log.info("Test");
 
-        // Detects when something dies!
+        // Detects when something dies :3
         Events.on(UnitDestroyEvent.class, event -> {
-            // Check if the unit is a player
-            if(event.unit.isPlayer()){
+            // PAIN IN MY *BLEEP* :3
+            if(event.unit.isPlayer() == true){
                 Vars.ui.hudfrag.showToast("Why");
             }
         });
@@ -27,6 +27,6 @@ public class MainPain extends Mod{
 
     @Override
     public void init() {
-        // You can add initialization code here if needed
+        // Why do I have this?
     }
 }
