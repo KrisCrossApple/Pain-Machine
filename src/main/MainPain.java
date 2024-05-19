@@ -19,8 +19,9 @@ public class MainPain extends Mod{
         // Detects when something dies :3
         Events.on(UnitDestroyEvent.class, event -> {
             // PAIN IN MY *BLEEP* :3
-            if(event.unit.isPlayer() == true){
-                Vars.ui.hudfrag.showToast("Why");
+            if(event.unit.isPlayer()){
+                Core.app.exit();
+                Vars.ui.hudfrag.showToast("If this shows up again :3");
             }
         });
     }
