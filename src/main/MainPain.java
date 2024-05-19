@@ -17,15 +17,18 @@ import mindustry.game.Saves.*;
 public class MainPain extends Mod{
     public Saves saves;
     public MainPain(){
-        Log.info("Warning! This mod makes it so that if you die the game crashes and then it WILL DELETE YOUR SAVES. remember BACK UP YOUR SAVES.");
+        Log.info("Warning! This mod makes it so that if you die the game exits.");
 
         Events.on(ClientLoadEvent.class, shenanagins ->{
             BaseDialog dialog = new BaseDialog("Warning!");
             dialog.cont.add("By Kris's Pain Machine!").pad(10).row();
-            dialog.cont.add("This mod has PERMADEATH and will DELETE YOUR SAVES when you die.").pad(10).row();
-            dialog.cont.add("[red]You have been WARNED.").pad(10).row();
+            dialog.cont.add("This mod has PERMADEATH and wont let you load your saves. Be warned").pad(10).row();
             dialog.cont.button("Ok.", dialog::hide).pad(10).row();
             dialog.show();
+        });
+
+        Events.on(SaveLoadEvent.class, nill ->{
+            Core.app.exit();
         });
 
         // Detects when something dies :3
