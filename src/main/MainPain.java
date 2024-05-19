@@ -14,7 +14,15 @@ import mindustry.core.*;
 public class MainPain extends Mod{
 
     public MainPain(){
-        Log.info("Test");
+        Log.info("Warning! This mod makes it so that if you die the game crashes and then it WILL DELETE YOUR SAVES. remember BACK UP YOUR SAVES.");
+
+        Events.on(ClientLoadEvent.class, shenanagins ->{
+            BaseDialog dialog = new BaseDialog("Warning!");
+            dialog.cont.add("This mod has PERMADEATH and will DELETE YOUR SAVES when you die.").row();
+            dialog.cont.add("You have been WARNED.");
+            dialog.cont.button("Ok.", dialog::hide);
+            dialog.show();
+        });
 
         // Detects when something dies :3
         Events.on(UnitDestroyEvent.class, event -> {
