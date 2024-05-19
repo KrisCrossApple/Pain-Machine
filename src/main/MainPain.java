@@ -18,9 +18,10 @@ public class MainPain extends Mod{
 
         Events.on(ClientLoadEvent.class, shenanagins ->{
             BaseDialog dialog = new BaseDialog("Warning!");
+            dialog.cont.add("*Kris's Pain Machine*");
             dialog.cont.add("This mod has PERMADEATH and will DELETE YOUR SAVES when you die.").row();
-            dialog.cont.add("You have been WARNED.");
-            dialog.cont.button("Ok.", dialog::hide);
+            dialog.cont.add("[red]You have been WARNED.");
+            dialog.cont.button("Ok.", dialog::hide).pad(10);
             dialog.show();
         });
 
