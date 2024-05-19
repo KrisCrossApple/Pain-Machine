@@ -33,7 +33,6 @@ public class MainPain extends Mod{
             // PAIN IN MY *BLEEP* :3
             if(event.unit.isPlayer() == true){
                 Core.app.exit();
-                saves.deleteAll();
                 Vars.ui.hudfrag.showToast("If this shows up again :3");
             }
         });
