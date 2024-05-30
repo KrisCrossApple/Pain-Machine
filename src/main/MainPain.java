@@ -17,9 +17,6 @@ import mindustry.game.Saves.*;
 
 public class MainPain extends Mod{
     public MainPain(){
-        Events.run(EventType.Trigger.update, () -> {
-        Log.info(Vars.player.unit().health);
-        });
 
         // Detects when something dies :3
         Events.on(UnitDestroyEvent.class, event -> {
